@@ -1,0 +1,193 @@
+{% extends 'patients/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="glass-card text-center mb-5">
+                <h1 class="text-white mb-4">
+                    <i class="fas fa-phone medical-icon me-3"></i>
+                    Contact Us
+                </h1>
+                <p class="lead text-white">
+                    Get in touch with us for any inquiries or appointments
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="glass-card">
+                <h3 class="text-white mb-4">
+                    <i class="fas fa-envelope text-primary me-3"></i>
+                    Send us a Message
+                </h3>
+                
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-white">
+                            <i class="fas fa-user me-2"></i>Full Name
+                        </label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-white">
+                            <i class="fas fa-envelope me-2"></i>Email Address
+                        </label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone" class="form-label text-white">
+                            <i class="fas fa-phone me-2"></i>Phone Number
+                        </label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label text-white">
+                            <i class="fas fa-tag me-2"></i>Subject
+                        </label>
+                        <select class="form-control" id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="appointment">Appointment Booking</option>
+                            <option value="emergency">Emergency</option>
+                            <option value="inquiry">General Inquiry</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="form-label text-white">
+                            <i class="fas fa-comment me-2"></i>Message
+                        </label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="glass-card">
+                <h3 class="text-white mb-4">
+                    <i class="fas fa-map-marker-alt text-danger me-3"></i>
+                    Contact Information
+                </h3>
+
+                <div class="contact-info">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-hospital text-primary" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white mb-1">Hospital Address</h5>
+                            <p class="text-white mb-0">
+                                123 Medical Center Drive<br>
+                                Healthcare District, City 12345<br>
+                                State, Country
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-phone text-success" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white mb-1">Phone Numbers</h5>
+                            <p class="text-white mb-0">
+                                Emergency: <strong>+1 (555) 911-0000</strong><br>
+                                General: <strong>+1 (555) 123-4567</strong><br>
+                                Appointments: <strong>+1 (555) 234-5678</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-envelope text-warning" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white mb-1">Email Addresses</h5>
+                            <p class="text-white mb-0">
+                                General: <strong>info@medcare.com</strong><br>
+                                Appointments: <strong>appointments@medcare.com</strong><br>
+                                Emergency: <strong>emergency@medcare.com</strong>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="contact-icon me-4">
+                            <i class="fas fa-clock text-info" style="font-size: 2rem;"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white mb-1">Working Hours</h5>
+                            <p class="text-white mb-0">
+                                Monday - Friday: <strong>8:00 AM - 8:00 PM</strong><br>
+                                Saturday: <strong>9:00 AM - 6:00 PM</strong><br>
+                                Sunday: <strong>10:00 AM - 4:00 PM</strong><br>
+                                <span class="text-danger">Emergency: 24/7</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links mt-4 pt-4" style="border-top: 1px solid rgba(255,255,255,0.2);">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="glass-card text-center">
+                <h3 class="text-white mb-4">
+                    <i class="fas fa-exclamation-triangle text-danger me-3"></i>
+                    Emergency Information
+                </h3>
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">
+                        <i class="fas fa-ambulance me-2"></i>
+                        Emergency Hotline: +1 (555) 911-0000
+                    </h4>
+                    <p class="mb-0">
+                        For life-threatening emergencies, call immediately or visit our Emergency Department. 
+                        Our emergency services are available 24/7.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+    this.reset();
+});
+</script>
+{% endblock %}
